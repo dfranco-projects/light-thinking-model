@@ -2,7 +2,7 @@
 
 Welcome to the Light Deep Thinking Model repository! This project aims to develop a **lighter deep thinking model** inspired by the OpenAI O1 model. Our goal is to demystify the latest advancements in artificial intelligence and provide a clearer understanding of how these algorithms function.
 
-In this repository, you'll find resources and code designed to help you explore the intricacies of Deep Thinking Models. We will delve into the architecture, functionality, and applications, making the material accessible to both beginners and seasoned practitioners.
+In this repository, you'll find resources and code designed to help you explore the intricacies of Deep Thinking Models. We will look into the architecture, functionality, and applications, making the material accessible to both beginners and seasoned practitioners.
 
 ## Overview
 
