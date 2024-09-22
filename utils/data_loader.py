@@ -25,23 +25,6 @@ class TextDataset(Dataset):
         inputs = self.tokenizer(item['text'], truncation=True, padding='max_length', max_length=self.max_length, return_tensors='pt')
         return inputs['input_ids'].squeeze(), inputs['attention_mask'].squeeze()
 
-def create_dataloader(dataset_name: str, tokenizer_name: str, max_length: int, batch_size: int) -> DataLoader:
-    '''
-    Create a DataLoader for the text dataset.
-
-    Args:
-        dataset_name (str): Name of the dataset to load.
-        tokenizer_name (str): Name of the tokenizer to use.
-        max_length (int): Maximum length of the tokenized input.
-        batch_size (int): Size of the batches.
-
-    Returns:
-        DataLoader: DataLoader for the text dataset.
-    '''
-
-    dataset = TextDataset(dataset_name, tokenizer_name, max_length)
-    return DataLoader(dataset, batch_size=batch_size, shuffle=True)
-
 def create_dataloader(dataset_name: str, max_length: int, batch_size: int, tokenizer_name: str = 'gpt2') -> DataLoader:
     '''
     Create a DataLoader for the text dataset.
