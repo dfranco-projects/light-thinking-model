@@ -26,14 +26,14 @@ def train_model(model: nn.Module, dataloader, criterion: nn.Module, optimizer, n
         optimizer: Optimizer for updating model weights.
         num_epochs (int): Number of epochs to train.
     '''
-    model.train()  # Set the model to training mode
+    model.train()  # setting the model to training mode
 
     for epoch in range(num_epochs):
         for inputs, targets in dataloader:
-            optimizer.zero_grad()  # Clear gradients
-            outputs = model(inputs)  # Forward pass
-            loss = criterion(outputs, targets)  # Compute loss
-            loss.backward()  # Backward pass
-            optimizer.step()  # Update weights
+            optimizer.zero_grad()  # clearing gradients
+            outputs = model(inputs)  # forward pass
+            loss = criterion(outputs, targets)  # computing loss
+            loss.backward()  # backward pass
+            optimizer.step()  # updating weights
 
         print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}')
