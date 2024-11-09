@@ -1,4 +1,4 @@
-# Light Deep Thinking Model
+# Light Deep Thinking Model (WIP)
 
 Welcome to the Light Deep Thinking Model repository! This project aims to develop a **lighter deep thinking model** inspired by the OpenAI O1 model. Our goal is to demystify the latest advancements in artificial intelligence and provide a clearer understanding of how these algorithms function.
 
@@ -58,6 +58,4 @@ light-thinking-model/
     └── rl_integration.ipynb   # Experiments linking the model with RL
 ```
 
-Thank you for joining me on this journey to explore the fascinating world of AI!
-
-**Work In Progress (WIP)**
+Join me on this journey to explore the fascinating world of AI!

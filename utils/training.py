@@ -1,6 +1,6 @@
 import torch
 from torch.utils.data import DataLoader
-from .evaluation import evaluate_model, calculate_loss 
+from .evaluation import evaluate_model, calculate_loss
 
 def train_model(model, train_loader: DataLoader, val_loader: DataLoader, device: str, num_epochs: int) -> None:
     '''
